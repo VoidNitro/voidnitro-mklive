@@ -17,7 +17,7 @@ VAI_print_step() {
 VAI_welcome() {
     clear
     printf "=============================================================\n"
-    printf "================ Void Linux Auto-Installer ==================\n"
+    printf "================ Void Nitro Auto-Installer ==================\n"
     printf "=============================================================\n"
 }
 
@@ -226,7 +226,7 @@ VAI_configure_autoinstall() {
     timezone="America/Chicago"
     keymap="us"
     libclocale="en_US.UTF-8"
-    username="voidlinux"
+    username="voidnitro"
     end_action="shutdown"
     end_script="/bin/true"
 

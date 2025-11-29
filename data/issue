@@ -1,9 +1,9 @@
 ###############################################################################
 
-Welcome to the Void Linux Live system. Two users are available to log in:
+Welcome to the Void Nitro Live system. Two users are available to log in:
 
-	- root:voidlinux
-	- anon:voidlinux
+	- root:voidnitro
+	- anon:voidnitro
 
 The `anon` user additionally has `sudo(8)` permissions to run any command
 without a password.
@@ -18,11 +18,11 @@ sure to configure your network interface and then use:
 	- xbps-install(1) to install/update packages
 	- xbps-query(1) to query for package info
 
-The Void Linux Handbook is also available for offline access in multiple
+The Void Nitro Handbook is also available for offline access in multiple
 formats, and can be accessed with the `void-docs(1)` utility.
 
-Thanks for using Void Linux.
+Thanks for using Void Nitro.
 
-    https://www.voidlinux.org
+    https://voidnitro.github.io
 
 ###############################################################################

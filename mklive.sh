@@ -74,7 +74,7 @@ usage() {
 	cat <<-EOH
 	Usage: $PROGNAME [options]
 
-	Generates a basic live ISO image of Void Linux. This ISO image can be written
+	Generates a basic live ISO image of Void Nitro. This ISO image can be written
 	to a CD/DVD-ROM or any USB stick.
 
 	To generate a more complete live ISO image, use mkiso.sh.
@@ -99,7 +99,7 @@ usage() {
 	 -C "<arg> ..."     Add additional kernel command line arguments
 	 -P "<platform> ..."
 	                    Platforms to enable for aarch64 EFI ISO images (available: pinebookpro, x13s)
-	 -T <title>         Modify the bootloader title (default: Void Linux)
+	 -T <title>         Modify the bootloader title (default: Void Nitro)
 	 -v linux<version>  Install a custom Linux version on ISO image (default: linux metapackage).
 	                    Also accepts linux metapackages (linux-mainline, linux-lts).
 	 -x <script>        Path to a postsetup script to run before generating the initramfs
@@ -544,7 +544,7 @@ HOST_ARCH=$(xbps-uhelper arch)
 : ${INITRAMFS_COMPRESSION:=xz}
 : ${SQUASHFS_COMPRESSION:=xz}
 : ${BASE_SYSTEM_PKG:=base-system}
-: ${BOOT_TITLE:="Void Linux"}
+: ${BOOT_TITLE:="Void Nitro"}
 : ${LINUX_VERSION:=linux}
 
 XBPS_TARGET_ARCH="$TARGET_ARCH" register_binfmt

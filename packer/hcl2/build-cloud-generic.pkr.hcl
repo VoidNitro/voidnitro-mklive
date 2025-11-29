@@ -7,7 +7,7 @@ build {
       "auto autourl=http://{{.HTTPIP}}:{{.HTTPPort}}/x86_64.cfg",
       "<enter>"
     ]
-    vm_name = "voidlinux-x86_64"
+    vm_name = "voidnitro-x86_64"
     output_directory = "cloud-generic-x86_64"
   }
 
@@ -26,7 +26,7 @@ build {
       "auto autourl=http://{{.HTTPIP}}:{{.HTTPPort}}/x86_64-musl.cfg",
       "<enter>"
     ]
-    vm_name = "voidlinux-x86_64-musl"
+    vm_name = "voidnitro-x86_64-musl"
     output_directory = "cloud-generic-x86_64-musl"
   }
 

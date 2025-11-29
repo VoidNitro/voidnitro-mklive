@@ -49,7 +49,7 @@ usage() {
     cat <<-EOH
 	Usage: $PROGNAME [options] <arch>
 
-	Generate a Void Linux ROOTFS tarball for the specified architecture.
+	Generate a Void Nitro ROOTFS tarball for the specified architecture.
 
 	Supported architectures:
 	 i686, i686-musl, x86_64, x86_64-musl,
@@ -199,11 +199,11 @@ run_cmd_chroot "$ROOTFS" "xbps-reconfigure -a"
 # chrooted.  We also remove the lock file in this step to clean up the
 # lock on the passwd database, lest it be left in the system and
 # propogated to other points.
-info_msg "Setting the default root password ('voidlinux')"
+info_msg "Setting the default root password ('voidnitro')"
 if [ ! -f "$ROOTFS/etc/shadow" ] ; then
     run_cmd_chroot "$ROOTFS" pwconv
 fi
-echo root:voidlinux | run_cmd_chroot "$ROOTFS" "chpasswd -c SHA512" || die "Could not set default credentials"
+echo root:voidnitro | run_cmd_chroot "$ROOTFS" "chpasswd -c SHA512" || die "Could not set default credentials"
 rm -f "$ROOTFS/etc/.pwd.lock"
 
 # At this point we're done running things in the chroot and we can

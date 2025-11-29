@@ -56,12 +56,12 @@ jobs:
             type=raw,value={{date 'YYYYMMDD'}}R${{ steps.release.outputs.rel }},enable={{is_default_branch}},priority=1000
           flavor: latest=false
           labels: |
-            org.opencontainers.image.authors=Void Linux team and contributors
-            org.opencontainers.image.url=https://voidlinux.org
+            org.opencontainers.image.authors=Void Nitro team and contributors
+            org.opencontainers.image.url=https://voidnitro.github.io
             org.opencontainers.image.documentation=https://github.com/${{ github.repository }}
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
-            org.opencontainers.image.vendor=Void Linux
-            org.opencontainers.image.title=Void Linux mklive container
+            org.opencontainers.image.vendor=Void Nitro
+            org.opencontainers.image.title=Void Nitro mklive container
             org.opencontainers.image.description=Image for building mklive images
 
       - name: Set up QEMU

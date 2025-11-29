@@ -1,18 +1,18 @@
-# The Void Linux live image/rootfs generator and installer
+# The Void Nitro live image/rootfs generator and installer
 
 ## Overview
 
 This repository contains several utilities:
 
-* [*mklive.sh*](#mklivesh) - The Void Linux live image generator for x86
+* [*mklive.sh*](#mklivesh) - The Void Nitro live image generator for x86
 * [*mkiso.sh*](#mkisosh) - Wrapper script to generate bootable and installable live
   images for i686, x86_64, and aarch64.
-* [*mkrootfs.sh*](#mkrootfssh) - The Void Linux rootfs generator for all platforms
-* [*mkplatformfs.sh*](#mkplatformfssh) - The Void Linux filesystem tool to produce
+* [*mkrootfs.sh*](#mkrootfssh) - The Void Nitro rootfs generator for all platforms
+* [*mkplatformfs.sh*](#mkplatformfssh) - The Void Nitro filesystem tool to produce
   a rootfs for a particular platform
-* [*mkimage.sh*](#mkimagesh) - The Void Linux image generator for ARM platforms
+* [*mkimage.sh*](#mkimagesh) - The Void Nitro image generator for ARM platforms
 * [*mknet.sh*](#mknetsh) - Script to generate netboot tarballs for Void
-* *installer.sh* - The Void Linux el-cheapo installer for x86
+* *installer.sh* - The Void Nitro el-cheapo installer for x86
 * *release.sh* - interacts with GitHub CI to generate and sign images for releases
 
 ### Workflow
@@ -25,11 +25,11 @@ To generate a live ISO like the officially-published ones, use
 
 #### Generating ROOTFS tarballs
 
-ROOTFS tarballs contain a basic Void Linux root filesystem without a kernel.
+ROOTFS tarballs contain a basic Void Nitro root filesystem without a kernel.
 These can be useful for doing a [chroot install](https://docs.voidlinux.org/installation/guides/chroot.html)
 or for [chroots and containers](https://docs.voidlinux.org/config/containers-and-vms/chroot.html).
 
-Use [*mkrootfs.sh*](#mkrootfssh) to generate a Void Linux ROOTFS.
+Use [*mkrootfs.sh*](#mkrootfssh) to generate a Void Nitro ROOTFS.
 
 #### Generating platform-specific tarballs
 
@@ -39,7 +39,7 @@ ARM systems or other environments that require platform-specific kernels, like
 Raspberry Pis.
 
 First create a ROOTFS for the desired architecture, then use
-[*mkplatformfs.sh*](#mkplatformfssh) to generate a Void Linux PLATFORMFS.
+[*mkplatformfs.sh*](#mkplatformfssh) to generate a Void Nitro PLATFORMFS.
 
 #### Generating ARM images
 
